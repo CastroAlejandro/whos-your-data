@@ -1,4 +1,8 @@
-form.signup,
+form.signup
+{
+  margin-top: 20px;
+}
+
 form.login {
   margin-top: 50px;
 }
@@ -9,15 +13,45 @@ form.login {
 
   float: none;
 
-  margin-bottom: 10px;
+  margin-top: 40px;
   width        : 50%
 }
 
+#recHeader{
+  background-color: black;
+  border: 8px solid #003EFF;
+  
+}
+#recTitle{
+  
+  color: #FF77FD;
+}
+
+
 body {
 
-  background-color: "black";
   background-image: url("Background.svg");
 
+}
+
+
+#login-form, #signup-form{
+  
+  margin    : 0 auto;
+
+  float: none;
+
+  margin-bottom: 10px;
+  width        : 50%
+}
+#login-title{
+  text-align: center;
+  margin-top: 50px;
+}
+
+#signupformid{
+  text-align: center;
+  margin-top: 100px;
 }
 .center{
   text-align: center;
@@ -26,6 +60,9 @@ body {
   float: right;
 
 }
+
+
+
 /* visibility: hidden; */
 /* .hide {
 
