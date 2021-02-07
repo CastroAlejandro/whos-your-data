@@ -12,10 +12,17 @@ form.login {
 
   margin-bottom: 10px;
   width        : 50%
+}
 
 body {
+
   background-color: "black";
   background-image: url("Background.svg");
 
 }
 
+/* visibility: hidden; */
+/* .hide {
+
+  display: none;
+} */
