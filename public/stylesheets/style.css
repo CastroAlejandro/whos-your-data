@@ -3,7 +3,7 @@ form.login {
   margin-top: 50px;
 }
 
-.card {
+#card-choices {
   text-align: center;
   margin    : 0 auto;
 
@@ -19,7 +19,9 @@ body {
   background-image: url("Background.svg");
 
 }
-
+.center{
+  text-align: center;
+}
 #developers-picks {
   float: right;
 
