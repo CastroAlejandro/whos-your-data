@@ -3,7 +3,6 @@ form.login {
   margin-top: 50px;
 }
 
-
 .card {
   text-align: center;
   margin    : 0 auto;
@@ -21,6 +20,10 @@ body {
 
 }
 
+#developers-picks {
+  float: right;
+  margin-left   :  20px;
+}
 /* visibility: hidden; */
 /* .hide {
 
