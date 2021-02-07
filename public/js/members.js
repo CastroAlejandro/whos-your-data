@@ -9,20 +9,18 @@ $(document).ready(function () {
   });
 });
 
-var cardChoices = $("#card-choices")
-cardChoices.hide()
-
 var developersPicks = $("#developers-picks")
 developersPicks.hide()
 
 function startQuiz() {
   console.log("start quiz");
-  var startScreen = $("#start-screen");
-  startScreen.hide()
+  var cardChoices = $("#card-choices")
+  cardChoices.hide()
+  
 
   //Unhide the questions 
   developersPicks.removeAttr("style")
 
 }
 
-startBtn.on('click', startQuiz)
+submitBtn.on('click', startQuiz)
