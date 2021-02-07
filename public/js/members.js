@@ -11,6 +11,8 @@ $(document).ready(function () {
 
 var developersPicks = $("#developers-picks")
 developersPicks.hide()
+var recommendations = $("#recommendations")
+recommendations.hide()
 
 function startQuiz() {
   console.log("start quiz");
@@ -19,6 +21,7 @@ function startQuiz() {
   
 
   //Unhide the questions 
+  recommendations.removeAttr("style")
   developersPicks.removeAttr("style")
 
 }

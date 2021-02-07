@@ -50,9 +50,36 @@
     <input class="btn btn-primary" id="submit" type="submit" value="Submit">
   </div>
 </div>
+<div class="flex container col-md-12" id="recommendations">
+    <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="center">Your Top battleNode Recommendations</h2>
+        </div>
+        {{!-- <ul class="list-group list-group-flush center">
+          {{#each burgers}}
+          {{#unless devoured}}
+          {{> burgers/burger-block devoured=true}}
+          {{/unless}}
+          {{/each}}
+        </ul> --}}
+      </div>
+    </div>
+    </div>
 
-<div class="container align-items-right" id="developers-picks">
 
+
+</div>
+<div class="flex container col-md-4" id="developers-picks">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+  <div class="card-header">
+    <h2 class="center">Developer's Picks</h2>
+  </div>
+  </div>
+  </div>
   <div class="card mb-3" style="max-width: 540px;">
     <div class="row no-gutters">
       <div class="col-md-4">
@@ -78,7 +105,7 @@
       <div class="col-md-8">
         <div class="card-body">
           <h5 class="card-title">Kingdom Hearts</h5>
-          <p class="card-text">This game tells the story of the power of friendship as Sora and his friends embark on a perilous adventure. Set in a vast array of Disney and Pixar worlds, KINGDOM HEARTS follows the journey of Sora, a young boy and unknowing heir to a spectacular power. Sora is joined by Donald Duck and Goofy to stop an evil force known as the Heartless from invading and overtaking the universe.
+          <p class="card-text">Set in a vast array of Disney and Pixar worlds, KINGDOM HEARTS follows the journey of Sora, a young boy and unknowing heir to a spectacular power. Sora is joined by Donald Duck and Goofy to stop an evil force known as the Heartless from invading and overtaking the universe.
           Year Released: 2002
           Console: Playstation
           </p>
@@ -90,15 +117,15 @@
   <div class="card mb-3" style="max-width: 540px;">
     <div class="row no-gutters">
       <div class="col-md-4">
-        <img src="..." alt="...">
+        <img class="img-thumbnail" src="https://s1.gaming-cdn.com/images/products/60/271x377/call-of-duty-black-ops-cover.jpg" alt="COD Black OPs">
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-            content.
-            This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Picked by Developer: </small></p>
+          <h5 class="card-title">Call of Duty: Black OPs</h5>
+          <p class="card-text">Set in the 1960s during the Cold War, the game's campaign follows CIA operative Alex Mason as he attempts to recall certain memories in combat in order to complete his mission objective. 
+          Year Released: 2010
+          Console: XBOX360, Playstation 3</p>
+          <p class="card-text"><small class="text-muted">Picked by Developer: Michael Carter</small></p>
         </div>
       </div>
     </div>
