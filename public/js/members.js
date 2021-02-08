@@ -27,3 +27,4 @@ function startQuiz() {
 }
 
 submitBtn.on('click', startQuiz)
+
