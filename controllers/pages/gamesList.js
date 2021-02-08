@@ -5,7 +5,7 @@ function gamesList(req, res) {
         params: {
             key: "0e56bd7d3b4f4008beeb13e44a4fa52a",
             page: req.query.page || 1,
-            page_size: 5
+            page_size: 20
         }
     })
         .then(response => {
