@@ -6,10 +6,10 @@
 {{/if}}
 <form action="/gamesList" method="get">
     <input type="hidden" name="page" value="{{nextPage}}">
-    <button type="submit">Next</button>
+    {{!-- <button type="submit">Next</button> --}}
 </form>
 {{#each games}}
-<div class="overflow-auto">
+<div>
     <h2 class="text-center">{{name}} ---- Rating: {{rating}} / 5</h2>
     
     <img src="{{background_image}}" style="height: 200px; width: 500px" class="rounded mx-auto d-block" alt="">
