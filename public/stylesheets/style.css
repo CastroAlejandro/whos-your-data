@@ -6,6 +6,11 @@ form.login {
   margin-top: 50px;
 }
 
+#brand-name {
+  color          : pink;
+  text-decoration: underline;
+}
+
 #card-choices {
   text-align: center;
   margin    : 0 auto;
@@ -20,6 +25,10 @@ form.login {
 .card-body {
   background-color: black;
   border          : 8px solid #003EFF;
+}
+
+#navbar {
+  background-image: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8c3BhY2UlMjBiYWNrZ3JvdW5kfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80");
 }
 
 #recHeader {
@@ -46,10 +55,10 @@ nav {
 
 
 body {
-  background-repeat: no-repeat;
+  background-repeat  : no-repeat;
   background-position: center;
-  background-size: cover;
-   background-image: url("Background.svg");
+  background-size    : cover;
+  background-image   : url("Background.svg");
 
 }
 
