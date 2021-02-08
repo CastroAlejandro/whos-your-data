@@ -13,7 +13,13 @@ form.login {
   float: none;
 
   margin-top: 40px;
-  width     : 50%
+  width     : 50%;
+
+}
+
+.card-body {
+  background-color: black;
+  border          : 8px solid #003EFF;
 }
 
 #recHeader {
@@ -27,9 +33,17 @@ form.login {
   color: #FF77FD;
 }
 
+
 nav {
   height: 10em;
 }
+
+.background {
+  background-image: url("http://wallpaperstock.net/stars%2C-universe%2C-space_wallpapers_54623_2560x1440.jpg");
+  color           : white;
+}
+
+
 
 body {
 
@@ -78,6 +92,27 @@ body {
   overflow-x: hide;
 
 
+}
+
+.console {
+  background-color: #ff2975;
+}
+
+
+.genre {
+  background-color: #ffd319;
+}
+
+.rating {
+  background-color: #f222ff
+}
+
+.decade {
+  background-color: #00BFFF
+}
+
+.submit {
+  background-color: #DC143C;
 }
 
 /* visibility: hidden; */
