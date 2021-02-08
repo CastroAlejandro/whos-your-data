@@ -9,9 +9,10 @@
     <button type="submit">Next</button>
 </form>
 {{#each games}}
-<div>
-    <h1>{{name}}</h1>
-    <img src="{{background_image}}" style="height: 100px; width: 100px" alt="">
+<div class="overflow-auto">
+    <h2 class="text-center">{{name}} ---- Rating: {{rating}} / 5</h2>
+    
+    <img src="{{background_image}}" style="height: 200px; width: 500px" class="rounded mx-auto d-block" alt="">
 </div>
 {{/each}}
 
