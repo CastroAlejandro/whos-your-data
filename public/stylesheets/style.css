@@ -38,7 +38,7 @@ nav {
   height: 10em;
 }
 
-.background {
+.background. {
   background-image: url("http://wallpaperstock.net/stars%2C-universe%2C-space_wallpapers_54623_2560x1440.jpg");
   color           : white;
 }
@@ -46,8 +46,10 @@ nav {
 
 
 body {
-
-  background-image: url("Background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+   background-image: url("Background.svg");
 
 }
 
