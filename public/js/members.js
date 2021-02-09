@@ -161,17 +161,17 @@ function addUserFavorite(id, title, rating, genre){
 submitBtn.on('click', startQuiz)
 submitBtn.on('click', checkParameters);
   
-  var cardChoices = $("#card-choices")
-  cardChoices.hide()
+//   var cardChoices = $("#card-choices")
+//   cardChoices.hide()
   
 
   //Unhide the questions 
-  recommendations.removeAttr("style")
-  developersPicks.removeAttr("style")
+//   recommendations.removeAttr("style")
+//   developersPicks.removeAttr("style")
 
 
 
 
-submitBtn.on('click', startQuiz)
+
 
 });
