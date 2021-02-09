@@ -133,19 +133,19 @@ const findGames = (platformId, genreType) => {
 	window.location = `http://localhost:8080/results?platformId=${platformId}&genre=${genreType}`;
 }
 
-// submitBtn.on('click', startQuiz)
+submitBtn.on('click', startQuiz)
 submitBtn.on('click', checkParameters);
   
-//   var cardChoices = $("#card-choices")
-//   cardChoices.hide()
+  var cardChoices = $("#card-choices")
+  cardChoices.hide()
   
 
-//   //Unhide the questions 
-//   recommendations.removeAttr("style")
-//   developersPicks.removeAttr("style")
+  //Unhide the questions 
+  recommendations.removeAttr("style")
+  developersPicks.removeAttr("style")
 
 
-// }
 
-// submitBtn.on('click', startQuiz)
+
+submitBtn.on('click', startQuiz)
 
