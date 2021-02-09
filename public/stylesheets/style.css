@@ -49,6 +49,14 @@ form.login {
   border          : 8px solid #003EFF;
 }
 
+#developer-info {
+  background-color: black;
+  border          : 8px solid rgb(98, 0, 255);
+  margin: 10px 10px 10px 10px;
+  width: 75%;
+  margin: 0 auto;
+}
+
 #recTitle,
 h2 {
 
@@ -59,7 +67,7 @@ h5 {
 }
 
 p {
-  color: gold;
+  color: rgb(255, 102, 0);
 }
 
 .scroll{
