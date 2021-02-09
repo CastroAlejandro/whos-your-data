@@ -43,14 +43,14 @@ form.login {
 }
 
 
+
 #recHeader, #games_page {
-  
   background-color: black;
   border          : 8px solid #003EFF;
-
 }
 
-#recTitle, h2 {
+#recTitle,
+h2 {
 
   color: #FF77FD;
 }
@@ -67,7 +67,7 @@ p {
   overflow-y: auto;
 }
 nav {
-  height: 10em;
+  height: 3em;
 }
 
 .background {
