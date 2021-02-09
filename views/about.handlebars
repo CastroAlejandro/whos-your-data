@@ -1,40 +1,69 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" >
     <div class="container-fluid">
         <div class="navbar-header">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">battleNodes</a>
+            <nav class="navbar navbar-expand-lg" id="navbar">
+                <a class="navbar-brand" id="brand-name" href="#">battleNodes</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" href="/">Home </a>
-                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                        <a class="navbar-brand" href="/gamesList">Home <span class="sr-only">(current)</span></a>
+                        <a class="navbar-brand active" href="/about">About</a>
+                        <a class="navbar-brand" href="/logout">
+                            Logout
+                        </a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
 </nav>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-            <h2>Login Form</h2>
-            <form class="login">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="email-input" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="password-input" placeholder="Password">
-                </div>
-                <button type="submit" class="btn btn-default">Login</button>
-            </form>
-            <br />
-            <p>Or sign up <a href="/">here</a></p>
+
+<div class="col" id="devheader">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header" id="recHeader">
+                <h2 class="center" id="devTitle">About the Developers</h2>
+            </div>
         </div>
     </div>
 </div>
-<script type="text/javascript" src="js/login.js"></script>
+<div class=" card-body">
+    <h5 class="card-title">Alejandro Castro</h5>
+    <p class="card-text">A student with UCF bootcamp, an avid coder and experienced in video game consoles. Check out my
+        github. </p>
+    <a href="https://github.com/CastroAlejandro" target="_blank"><img
+            src="https://img.icons8.com/fluent/48/000000/github.png" style="height: 30px" "width: 30px;" /> </a>
+
+</div>
+</div>
+</div>
+
+
+<div class="card-body">
+    <h5 class="card-title">Ashlyn Hicks</h5>
+    <p class="card-text">A student with the UCF coding bootcamp. Love to code and develop new projects! Born and raised in Maryland and some call me the Queen of Baltimore! I enjoy a nice beverage every now and again. Can drink water and vaccuum a lot at the same time.</p>
+</div>
+</div>
+</div>
+
+
+<div class="card-body">
+    <h5 class="card-title">Jonathan Smith</h5>
+    <p class="card-text">An aspiring web developer who loves a good coding challenge and is willing to work hard. Won't commit bad github commits and won't apologize for over committing to github. Github is LIFE! Count on me, but don't tattoo numbers on me.</p>
+</div>
+</div>
+</div>
+
+
+<div class="card-body">
+    <h5 class="card-title">Michael Carter</h5>
+    <p class="card-text">A web developer on the rise who is willing to solve any tasks thrown at me. Willing to go the extra mile to get the job done.</p>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript" src="js/about.js"></script>

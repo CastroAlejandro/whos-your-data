@@ -41,6 +41,7 @@ var recommendations = $("#recommendations")
 recommendations.hide()
 
 function startQuiz() {
+
 	console.log("start quiz");
 	var cardChoices = $("#card-choices")
 	cardChoices.hide()
@@ -50,6 +51,17 @@ function startQuiz() {
 	recommendations.removeAttr("style")
 	developersPicks.removeAttr("style")
 
+  
+  var cardChoices = $("#card-choices")
+  cardChoices.hide()
+  
+
+  //Unhide the questions 
+  recommendations.removeAttr("style")
+  developersPicks.removeAttr("style")
+
+
 }
 
 submitBtn.on('click', startQuiz)
+
