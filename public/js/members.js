@@ -59,7 +59,13 @@ const platform = [
 	{ 'name': 'Neo Geo', 'platform': 12 }
   ]
 
+
+const publishers = [
+	
+]
+
   var userID;
+
 
 	console.log('member.js loaded')
 	// This file just does a GET request to figure out which user is logged in
@@ -161,6 +167,15 @@ function addUserFavorite(id, title, rating, genre){
 submitBtn.on('click', startQuiz)
 submitBtn.on('click', checkParameters);
   
+
+// //   var cardChoices = $("#card-choices")
+// //   cardChoices.hide()
+  
+
+// //   //Unhide the questions 
+// //   recommendations.removeAttr("style")
+// //   developersPicks.removeAttr("style")
+
   var cardChoices = $("#card-choices")
   cardChoices.hide()
   
@@ -168,6 +183,7 @@ submitBtn.on('click', checkParameters);
   //Unhide the questions 
   recommendations.removeAttr("style")
   developersPicks.removeAttr("style")
+
 
 
 

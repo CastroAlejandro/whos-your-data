@@ -64,35 +64,15 @@
 	</div>
 	<div class="card">
 		<div class="card-header background">
-			Pick your ESRB rating
+			Pick a publishers
 		</div>
-		<div class="card-body">
-			{{!-- <a href="#" class="btn btn-primary rating" id="everyone">Everyone (E)</a>
-			<a href="#" class="btn btn-primary rating" id="teen">Teen(T)</a>
-			<a href="#" class="btn btn-primary rating" id="mature">Mature (M)</a>
-			<a href="#" class="btn btn-primary rating" id="skip">Skip</a> --}}
-			<button type="submit" name="learn" value="myimage">
-				<img src="https://www.esrb.org/wp-content/uploads/2019/05/E.svg" class="attachment-full size-full"
-					alt="Everyone ESRB rating icon" height="90.628" width="60.418">
-			</button>
-			<button type="submit" name="learn" value="myimage">
-				<img src="https://www.esrb.org/wp-content/uploads/2019/05/E10plus.svg" class="attachment-full size-full"
-					alt="Everyone 10 plus ESRB rating icon" height="90.627" width="60.418">
-			</button>
-			<button type="submit" name="learn" value="myimage">
-				<img src="https://www.esrb.org/wp-content/uploads/2019/05/T.svg" class="attachment-full size-full"
-					alt="Teen ESRB rating icon" height="90.628" width="60.42">
-			</button>
-			<button type="submit" name="learn" value="myimage">
-				<img src="https://www.esrb.org/wp-content/uploads/2019/05/M.svg" class="attachment-full size-full"
-					alt="Mature ESRB rating icon" height="90.628" width="60.418">
-			</button>
-			<button type="submit" name="learn" value="myimage">
-				<img src="https://www.esrb.org/wp-content/uploads/2019/05/AO.svg" class="attachment-full size-full"
-					alt="Adult only 18+ ESRB rating icon" height="90.628" width="60.42">
-			</button>
-
-			{{!-- search by stores, publishers, metacritic --}}
+		<div class="card-body" id="publisherList">
+			<select id="publisherSelect" class="custom-select">
+				<option selected>Open this select menu</option>
+				{{!-- <option value="1">One</option>
+				<option value="2">Two</option>
+				<option value="3">Three</option> --}}
+			</select>
 		</div>
 	</div>
 	<div class="card">
@@ -226,3 +206,27 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="js/members.js"></script>
+
+
+	{{!-- <button type="submit" name="learn" value="myimage">
+				<img src="https://www.esrb.org/wp-content/uploads/2019/05/E.svg" class="attachment-full size-full"
+					alt="Everyone ESRB rating icon" height="90.628" width="60.418">
+			</button>
+			<button type="submit" name="learn" value="myimage">
+				<img src="https://www.esrb.org/wp-content/uploads/2019/05/E10plus.svg" class="attachment-full size-full"
+					alt="Everyone 10 plus ESRB rating icon" height="90.627" width="60.418">
+			</button>
+			<button type="submit" name="learn" value="myimage">
+				<img src="https://www.esrb.org/wp-content/uploads/2019/05/T.svg" class="attachment-full size-full"
+					alt="Teen ESRB rating icon" height="90.628" width="60.42">
+			</button>
+			<button type="submit" name="learn" value="myimage">
+				<img src="https://www.esrb.org/wp-content/uploads/2019/05/M.svg" class="attachment-full size-full"
+					alt="Mature ESRB rating icon" height="90.628" width="60.418">
+			</button>
+			<button type="submit" name="learn" value="myimage">
+				<img src="https://www.esrb.org/wp-content/uploads/2019/05/AO.svg" class="attachment-full size-full"
+					alt="Adult only 18+ ESRB rating icon" height="90.628" width="60.42">
+			</button> --}}
+
+			{{!-- search by stores, publishers, metacritic --}}
