@@ -15,6 +15,13 @@ form.login {
   background-color: black;
   color           : deeppink;
 }
+#saveFavorites {
+  background-color: green;
+  color           : orange;
+  margin    : 0 auto;
+  display: flex;
+  justify-content: center;
+}
 
 #signup-form,
 #login-form {
@@ -165,8 +172,3 @@ body {
   color: deeppink;
 }
 
-/* visibility: hidden; */
-/* .hide {
-
-  display: none;
-} */
