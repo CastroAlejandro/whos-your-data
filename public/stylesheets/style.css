@@ -11,6 +11,17 @@ form.login {
   text-decoration: underline;
 }
 
+#buttoni {
+  background-color: black;
+  color           : deeppink;
+}
+
+#signup-form,
+#login-form {
+  border: solid 5px #0099cc !important;
+}
+
+
 #card-choices {
   text-align: center;
   margin    : 0 auto;
@@ -31,23 +42,43 @@ form.login {
   background-image: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8c3BhY2UlMjBiYWNrZ3JvdW5kfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80");
 }
 
-#recHeader {
+
+
+#recHeader, #games_page {
   background-color: black;
   border          : 8px solid #003EFF;
-
 }
 
-#recTitle {
+#developer-info {
+  background-color: black;
+  border          : 8px solid rgb(98, 0, 255);
+  margin: 10px 10px 10px 10px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+#recTitle,
+h2 {
 
   color: #FF77FD;
 }
-
-
-nav {
-  height: 10em;
+h5 {
+  color: silver;
 }
 
-.background. {
+p {
+  color: rgb(255, 102, 0);
+}
+
+.scroll{
+  max-height: 600px;
+  overflow-y: auto;
+}
+nav {
+  height: 3em;
+}
+
+.background {
   background-image: url("http://wallpaperstock.net/stars%2C-universe%2C-space_wallpapers_54623_2560x1440.jpg");
   color           : white;
 }
@@ -124,6 +155,14 @@ body {
 
 .submit {
   background-color: #DC143C;
+}
+
+#devheader {
+  margin-top: 50px;
+}
+
+#devTitle {
+  color: deeppink;
 }
 
 /* visibility: hidden; */

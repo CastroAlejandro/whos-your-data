@@ -1,22 +1,27 @@
 <nav class="navbar navbar-default">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<nav class="navbar navbar-expand-lg" id="navbar">
-				<a class="navbar-brand" id="brand-name" href="#">battleNodes</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-					aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
-						<a class="navbar-brand" href="/logout">
-							Logout
-						</a>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</div>
+
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <nav class="navbar navbar-expand-lg" id="navbar">
+        <a class="navbar-brand" id="brand-name" href="#">battleNodes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="navbar-brand" href="/about">About</a>
+            <a class="navbar-brand" href="/about">Favorites</a>
+            <a class="navbar-brand" href="/logout">
+              Logout
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
 </nav>
 
 <div class="container" id="card-choices">
@@ -69,11 +74,21 @@
 			<a href="#" class="btn btn-primary rating" id="teen">Teen(T)</a>
 			<a href="#" class="btn btn-primary rating" id="mature">Mature (M)</a>
 			<a href="#" class="btn btn-primary rating" id="skip">Skip</a> --}}
-			<img src="https://www.esrb.org/wp-content/uploads/2019/05/E.svg" class="attachment-full size-full" alt="Everyone ESRB rating icon" height="90.628" width="60.418">
-			<img src="https://www.esrb.org/wp-content/uploads/2019/05/E10plus.svg" class="attachment-full size-full" alt="Everyone 10 plus ESRB rating icon" height="90.627" width="60.418">
-			<img src="https://www.esrb.org/wp-content/uploads/2019/05/T.svg" class="attachment-full size-full" alt="Teen ESRB rating icon" height="90.628" width="60.42">
-			<img src="https://www.esrb.org/wp-content/uploads/2019/05/M.svg" class="attachment-full size-full" alt="Mature ESRB rating icon" height="90.628" width="60.418">
-			<img src="https://www.esrb.org/wp-content/uploads/2019/05/AO.svg" class="attachment-full size-full" alt="Adult only 18+ ESRB rating icon" height="90.628" width="60.42">
+      <button type = "submit" name = "learn" value = "myimage">
+        <img src="https://www.esrb.org/wp-content/uploads/2019/05/E.svg" class="attachment-full size-full" alt="Everyone ESRB rating icon" height="90.628" width="60.418">
+      </button>
+      <button type = "submit" name = "learn" value = "myimage">
+        <img src="https://www.esrb.org/wp-content/uploads/2019/05/E10plus.svg" class="attachment-full size-full" alt="Everyone 10 plus ESRB rating icon" height="90.627" width="60.418">
+      </button>
+      <button type = "submit" name = "learn" value = "myimage">
+        <img src="https://www.esrb.org/wp-content/uploads/2019/05/T.svg" class="attachment-full size-full" alt="Teen ESRB rating icon" height="90.628" width="60.42">
+      </button>
+      <button type = "submit" name = "learn" value = "myimage">
+        <img src="https://www.esrb.org/wp-content/uploads/2019/05/M.svg" class="attachment-full size-full" alt="Mature ESRB rating icon" height="90.628" width="60.418">
+      </button>
+      <button type = "submit" name = "learn" value = "myimage">
+        <img src="https://www.esrb.org/wp-content/uploads/2019/05/AO.svg" class="attachment-full size-full" alt="Adult only 18+ ESRB rating icon" height="90.628" width="60.42">
+      </button>
 
 			{{!-- search by stores, publishers, metacritic --}}
 		</div>
@@ -95,21 +110,19 @@
 <div class="flex container col-md-12" id="recommendations">
 	<div class="row">
 
-		<div class="col-md-8">
-			<div class="card">
-				<div class="card-header" id="recHeader">
-					<h2 class="center" id="recTitle">Your Top battleNode Recommendations</h2>
-				</div>
-				<ul class="list-group">
-					<li class="list-group-item disabled" aria-disabled="true">Cras justo odio</li>
-					<li class="list-group-item">Dapibus ac facilisis in</li>
-					<li class="list-group-item">Morbi leo risus</li>
-					<li class="list-group-item">Porta ac consectetur ac</li>
-					<li class="list-group-item">Vestibulum at eros</li>
-				</ul>
-				</ul>
-			</div>
-		</div>
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header" id="recHeader">
+          <h2 class="center" id="recTitle">Your Top battleNode Recommendations</h2>
+        </div>
+
+        <div id="games_page" class="scroll">
+         {{>gamesList}}
+
+        </div>
+      </div>
+    </div>
+
 
 		<div class="flex container col-md-4" id="developers-picks">
 			<div class="row">
@@ -119,8 +132,10 @@
 							<h2 class="center" id="recTitle">Developer's Picks</h2>
 						</div>
 
+
 					</div>
 				</div>
+        <div class="scroll">
 				<div class="card mb-3" id="recHeader" style="max-width: 540px;">
 					<div class="row no-gutters">
 						<div class="col-md-4">
@@ -201,12 +216,7 @@
 					</div>
 				</div>
 			</div>
+      </div>
 		</div>
 	</div>
-
-
-
-
-
-
 	<script type="text/javascript" src="js/members.js"></script>
