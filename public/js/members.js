@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 var submitBtn = $("#submit");
 
 const genre = [
@@ -57,26 +59,27 @@ const platform = [
 	{ 'name': 'Neo Geo', 'platform': 12 }
   ]
 
+
 const publishers = [
 	
 ]
 
-$(document).ready(function () {
+  var userID;
+
+
 	console.log('member.js loaded')
 	// This file just does a GET request to figure out which user is logged in
 	// and updates the HTML on the page
 	$.get("/api/user_data").then(function (data) {
 		$(".member-name").text(data.email);
+		userID = data.id;
+		
 	});
-
+	console.log(userID)
 	$('.console').on('click', (event) => {
 		console.log(event.target);
 		console.log("hello")
 	});
-
-	generateGenres();
-	generatePlatforms();
-});
 
 const generateGenres = () => {
 	for (const item of genre) {
@@ -99,7 +102,11 @@ const generatePlatforms = () => {
 
 		$('#platformSelect').append(optionHtml);
 	}
+
 }
+
+generateGenres();
+generatePlatforms();
 
 var developersPicks = $("#developers-picks")
 developersPicks.hide()
@@ -135,10 +142,32 @@ const checkParameters = () => {
 const findGames = (platformId, genreType) => {
 	window.location = `http://localhost:8080/results?platformId=${platformId}&genre=${genreType}`;
 }
-
-// submitBtn.on('click', startQuiz)
+$('.userFave').on('click', (event) => {
+	event.preventDefault();
+	console.log(event.target);
+	
+	let gameTitle = event.target.getAttribute("value");
+	let gameRating = event.target.getAttribute("data-rating");
+	let gameGenre = event.target.getAttribute("data-genre");
+	console.log(userID, gameTitle, gameRating, gameGenre);
+	addUserFavorite(userID, gameTitle, gameRating, gameGenre);
+});
+function addUserFavorite(id, title, rating, genre){
+	console.log("adding favorites")
+	//post info to server
+	$.post("/api/favorites", {
+		userID: id,
+		gameTitle: title,
+		gameRating: rating,
+		gameGenre: genre
+	}).then(function(data){
+		console.log(data)
+	})
+}
+submitBtn.on('click', startQuiz)
 submitBtn.on('click', checkParameters);
   
+
 // //   var cardChoices = $("#card-choices")
 // //   cardChoices.hide()
   
@@ -147,8 +176,18 @@ submitBtn.on('click', checkParameters);
 // //   recommendations.removeAttr("style")
 // //   developersPicks.removeAttr("style")
 
+  var cardChoices = $("#card-choices")
+  cardChoices.hide()
+  
 
-// }
+  //Unhide the questions 
+  recommendations.removeAttr("style")
+  developersPicks.removeAttr("style")
+
+
+
+
 
 submitBtn.on('click', startQuiz)
 
+});
