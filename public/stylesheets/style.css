@@ -42,11 +42,11 @@ form.login {
   background-image: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8c3BhY2UlMjBiYWNrZ3JvdW5kfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80");
 }
 
-#recHeader,
-#games_page {
+
+
+#recHeader, #games_page {
   background-color: black;
   border          : 8px solid #003EFF;
-
 }
 
 #recTitle,
@@ -54,8 +54,18 @@ h2 {
 
   color: #FF77FD;
 }
+h5 {
+  color: silver;
+}
 
+p {
+  color: gold;
+}
 
+.scroll{
+  max-height: 600px;
+  overflow-y: auto;
+}
 nav {
   height: 3em;
 }
@@ -144,7 +154,7 @@ body {
 }
 
 #devTitle {
-  color: yellow;
+  color: deeppink;
 }
 
 /* visibility: hidden; */
