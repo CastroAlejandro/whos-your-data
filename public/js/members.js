@@ -131,25 +131,22 @@ const findGames = (platformId, genreType) => {
 		}
 	});
 
-<<<<<<< HEAD
 	startQuiz();
 }
 
 // submitBtn.on('click', startQuiz)
 submitBtn.on('click', checkParameters);
-=======
   
-  var cardChoices = $("#card-choices")
-  cardChoices.hide()
+//   var cardChoices = $("#card-choices")
+//   cardChoices.hide()
   
 
-  //Unhide the questions 
-  recommendations.removeAttr("style")
-  developersPicks.removeAttr("style")
+//   //Unhide the questions 
+//   recommendations.removeAttr("style")
+//   developersPicks.removeAttr("style")
 
 
-}
+// }
 
-submitBtn.on('click', startQuiz)
+// submitBtn.on('click', startQuiz)
 
->>>>>>> 5bbddef333e6a97ee05a4e5fcecf43ea8b2691b5
