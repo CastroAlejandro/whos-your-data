@@ -33,7 +33,7 @@ module.exports = function (app) {
 
 	// Search results from the /members page
 	app.get('/results', isAuthenticated, (req, res) => {
-		console.log(req.query);
+		
 		let url = `https://api.rawg.io/api/games?key=fe6fb0ea3a144508b49ff65ffdcbbb1b&page_size=30&platforms=${req.query.platformId}&genre=${req.query.genre}`;
 		superagent
 			.get(url)
@@ -51,7 +51,7 @@ module.exports = function (app) {
 	});
 
 	app.get('/query_results', isAuthenticated, (req, res) => {
-		console.log(req.query);
+		
 		let url = `https://api.rawg.io/api/games?key=fe6fb0ea3a144508b49ff65ffdcbbb1b&page_size=30&platforms=${req.query.platformId}&genre=${req.query.genre}`;
 		superagent
 			.get(url)
@@ -61,7 +61,7 @@ module.exports = function (app) {
 				}
 				else {
 					let apiResult = result.body.results;
-					console.log(apiResult);
+					
 					res.send(apiResult);
 				}
 			});

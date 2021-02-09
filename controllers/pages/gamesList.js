@@ -9,7 +9,7 @@ function gamesList(req, res) {
         }
     })
         .then(response => {
-            console.log(response.data.results)
+            
             if(req.query.page){
                 const curr = parseInt(req.query.page)
                 pageModel.previousPage = curr - 1

@@ -12,10 +12,10 @@
 {{#each games}}
 <div>
     <h2 class="text-center">{{name}} ---- Rating: {{rating}} / 5</h2>
-    <form action="/gamesList" method="get">
-        <input type="hidden" name="page" value="{{nextPage}}">
-        <button type="submit">Save to Favorites</button>
-    </form> 
+    {{!-- <form action="/gamesList" method="get"> --}}
+        {{!-- <input type="hidden" name="page" value="{{nextPage}}"> --}}
+        <button class="userFave" value={{name}} data-rating={{rating}} data-genre={{genres.name}}>Save to Favorites</button>
+    {{!-- </form>  --}}
     
     <img src="{{background_image}}" style="height: 200px; width: 500px" class="rounded mx-auto d-block" alt="">
 </div>

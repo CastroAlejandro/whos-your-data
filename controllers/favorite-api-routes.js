@@ -46,7 +46,14 @@ module.exports = function(app) {
 
   // POST route for saving a new post
   app.post("/api/favorites", function(req, res) {
-    db.Favorite.create(req.body).then(function(dbFavorite) {
+      console.log("favorites route hit")
+      console.log("data here =>", req.body)
+    db.Favorite.create({
+        title: req.body.gameTitle,
+        genre: req.body.gameGenre,
+        rating: req.body.gameRating,
+        UserId: req.body.userID
+    }).then(function(dbFavorite) {
       res.json(dbFavorite);
     });
   });
