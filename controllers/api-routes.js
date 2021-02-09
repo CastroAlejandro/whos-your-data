@@ -46,4 +46,30 @@ module.exports = function (app) {
 			});
 		}
 	});
+
+	app.get('/genres', (req, res) => {
+		let genres = [];
+		// let requestUrl = 'https://api.rawg.io/api/genres?key=fe6fb0ea3a144508b49ff65ffdcbbb1b';
+		let requestUrl = 'https://api.rawg.io/api/platforms?key=fe6fb0ea3a144508b49ff65ffdcbbb1b';
+		superagent
+		.get(requestUrl)
+		.end((error, response) => {
+			if (error) {
+				console.log(error);
+			}
+			else {
+				let results = response.body.results;
+				for (const item of results) {
+					genres.push({
+						'name': item.name,
+						'platform': item.id
+					});
+				}
+				
+				res.send(genres);
+			}
+		});
+	});
+
+	
 };
