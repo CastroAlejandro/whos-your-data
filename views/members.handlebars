@@ -20,7 +20,7 @@
 </nav>
 
 <div class="container" id="card-choices">
-	<div class="card">
+	{{!-- <div class="card">
 		<div class="card-header background">
 			Pick your console
 		</div>
@@ -30,6 +30,20 @@
 			<a href="#" class="nes-btn is-primary console" id="pc">PC</a>
 			<a href="#" class="nes-btn is-primary console" id="nintendo">Nintendo</a>
 			<a href="#" class="nes-btn is-primary console" id="other">Other</a>
+		</div>
+	</div> --}}
+
+	<div class="card">
+		<div class="card-header background">
+			Pick your Platform
+		</div>
+		<div class="card-body" id="platformList">
+			<select id="platformSelect" class="custom-select">
+			<option selected>Open this select menu</option>
+			{{!-- <option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option> --}}
+		</select>
 		</div>
 	</div>
 
