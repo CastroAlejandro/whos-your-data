@@ -54,6 +54,13 @@ form.login {
 
   color: #FF77FD;
 }
+h5 {
+  color: silver;
+}
+
+p {
+  color: gold;
+}
 
 .scroll{
   max-height: 600px;
@@ -147,7 +154,7 @@ body {
 }
 
 #devTitle {
-  color: yellow;
+  color: deeppink;
 }
 
 /* visibility: hidden; */
