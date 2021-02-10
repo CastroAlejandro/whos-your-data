@@ -23,10 +23,10 @@ form.login {
   justify-content: center;
 }
 
-#signup-form,
+/* #signup-form,
 #login-form {
   border: solid 5px #0099cc !important;
-}
+} */
 
 
 #card-choices {
@@ -67,7 +67,7 @@ form.login {
 #recTitle,
 h2 {
 
-  color: #FF77FD;
+  color: white;
 }
 h5 {
   color: silver;

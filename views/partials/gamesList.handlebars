@@ -19,7 +19,7 @@
     {{!-- </form>  --}}
     
     <img src="{{background_image}}" style="height: 200px; width: 500px" class="rounded mx-auto d-block" alt="">
-    <button id="saveFavorites" class="userFave" value={{name}} data-rating={{rating}} data-genre={{genre}}>Save to Favorites</button>
+    <button id="saveFavorites" class="userFave" data-id="{{id}}" value="{{name}}" data-rating="{{rating}}" data-genre="{{this.genres.[0].name}}">Save to Favorites</button>
     <h2 class="text-center">---------------------------------------------------------------------</h2>
 </div>
 {{/each}}

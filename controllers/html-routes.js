@@ -17,7 +17,50 @@ module.exports = function (app) {
 		res.render("signup")
 	});
 
-	app.get("/gamesList", pages.gamesList);
+	app.get('/gamesList', pages.gamesList);
+
+	app.get('/keyword', (req, res) => {
+		let apiUrl = `https://api.rawg.io/api/games?key=fe6fb0ea3a144508b49ff65ffdcbbb1b&page_size=100&search=${req.query.search.toLowerCase()}`;
+
+		superagent
+			.get(apiUrl)
+			.end((error, result) => {
+				if (error) {
+					res.send('Internal Error Occurred');
+				}
+				else {
+					res.render('yeet', {
+						data: result.body.results
+					});
+				}
+			});
+	});
+
+	app.get('/search', (req, res) => {
+		console.log('\n\n');
+		console.log(req.query);
+
+		let genre = req.query.genre;
+		let fixedGenre = genre.replace(' ', '-');
+		let encodedGenre = encodeURIComponent(fixedGenre.toLowerCase());
+
+		let apiUrl = `https://api.rawg.io/api/games?key=fe6fb0ea3a144508b49ff65ffdcbbb1b&page_size=100&platforms=${req.query.platform}&genres=${encodedGenre}`;
+		console.log(apiUrl);
+		superagent
+			.get(apiUrl)
+			.end((error, result) => {
+				if (error) {
+					console.log(error);
+					res.send('Error Processing Request');
+				}
+				else {
+					
+					res.render('yeet', {
+						data: result.body.results
+					});
+				}
+			});
+	});
 
 	app.get("/login", pages.login);
 
