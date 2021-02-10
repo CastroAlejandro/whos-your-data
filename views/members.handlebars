@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+{{!-- <nav class="navbar navbar-default">
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<nav class="navbar navbar-expand-lg" id="navbar">
@@ -19,6 +19,40 @@
 			</nav>
 		</div>
 	</div>
+</nav> --}}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">battleNodes</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/login">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/gamesList">Search</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/about">About Us</a>
+          <a class="dropdown-item" href="/">Sign Up</a>
+		  <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">My Favorites</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/login">Logout</a>
+      </li>
+    </ul>
+    {{!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> --}}
+  </div>
 </nav>
 
 <div class="container" id="card-choices">
@@ -63,28 +97,28 @@
 		</div>
 	</div>
 	<div class="card">
-		<div class="card-header background">
-			Pick a publishers
-		</div>
-		<div class="card-body" id="publisherList">
-			<select id="publisherSelect" class="custom-select">
-				<option selected>Open this select menu</option>
-				{{!-- <option value="1">One</option>
-				<option value="2">Two</option>
-				<option value="3">Three</option> --}}
-			</select>
-		</div>
+		<input class="btn btn-primary submit" id="submit" type="submit" value="Submit">
 	</div>
-	<div class="card">
+	{{!-- <div class="card">
 		<div class="card-header background">
-			Pick your decade
+			Search For Games
 		</div>
 		<div class="card-body">
-			<a href="#" class="btn btn-primary decade">1980s</a> <a href="#" class="btn btn-primary decade">1990s</a> <a
-				href="#" class="btn btn-primary decade">2000s</a> <a href="#" class="btn btn-primary decade">2010s</a>
-			<a href="#" class="btn btn-primary decade">2020s</a> <a href="#" class="btn btn-primary decade">Skip</a>
+			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Keywords">
 		</div>
-		<input class="btn btn-primary submit" id="submit" type="submit" value="Submit">
+	</div> --}}
+	<div class="card">
+		<div class="card-header background">
+			Search By Keywords
+		</div>
+		<div class="card-body">
+			<div class="input-group">
+				<input id="searchKeyword" type="text" class="form-control" placeholder="Enter a Keyword">
+				<div class="input-group-append">
+					<button id="searchKeywordButton" class="nes-btn" type="button">Search</button>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -100,7 +134,6 @@
 
 				<div id="games_page" class="scroll">
 					{{>gamesList}}
-					
 				</div>
 			</div>
 		</div>
@@ -209,24 +242,26 @@
 
 
 	{{!-- <button type="submit" name="learn" value="myimage">
-				<img src="https://www.esrb.org/wp-content/uploads/2019/05/E.svg" class="attachment-full size-full"
-					alt="Everyone ESRB rating icon" height="90.628" width="60.418">
-			</button>
-			<button type="submit" name="learn" value="myimage">
-				<img src="https://www.esrb.org/wp-content/uploads/2019/05/E10plus.svg" class="attachment-full size-full"
-					alt="Everyone 10 plus ESRB rating icon" height="90.627" width="60.418">
-			</button>
-			<button type="submit" name="learn" value="myimage">
-				<img src="https://www.esrb.org/wp-content/uploads/2019/05/T.svg" class="attachment-full size-full"
-					alt="Teen ESRB rating icon" height="90.628" width="60.42">
-			</button>
-			<button type="submit" name="learn" value="myimage">
-				<img src="https://www.esrb.org/wp-content/uploads/2019/05/M.svg" class="attachment-full size-full"
-					alt="Mature ESRB rating icon" height="90.628" width="60.418">
-			</button>
-			<button type="submit" name="learn" value="myimage">
-				<img src="https://www.esrb.org/wp-content/uploads/2019/05/AO.svg" class="attachment-full size-full"
-					alt="Adult only 18+ ESRB rating icon" height="90.628" width="60.42">
-			</button> --}}
+		<img src="https://www.esrb.org/wp-content/uploads/2019/05/E.svg" class="attachment-full size-full"
+			alt="Everyone ESRB rating icon" height="90.628" width="60.418">
+	</button>
+	<button type="submit" name="learn" value="myimage">
+		<img src="https://www.esrb.org/wp-content/uploads/2019/05/E10plus.svg" class="attachment-full size-full"
+			alt="Everyone 10 plus ESRB rating icon" height="90.627" width="60.418">
+	</button>
+	<button type="submit" name="learn" value="myimage">
+		<img src="https://www.esrb.org/wp-content/uploads/2019/05/T.svg" class="attachment-full size-full"
+			alt="Teen ESRB rating icon" height="90.628" width="60.42">
+	</button>
+	<button type="submit" name="learn" value="myimage">
+		<img src="https://www.esrb.org/wp-content/uploads/2019/05/M.svg" class="attachment-full size-full"
+			alt="Mature ESRB rating icon" height="90.628" width="60.418">
+	</button>
+	<button type="submit" name="learn" value="myimage">
+		<img src="https://www.esrb.org/wp-content/uploads/2019/05/AO.svg" class="attachment-full size-full"
+			alt="Adult only 18+ ESRB rating icon" height="90.628" width="60.42">
+	</button> --}}
 
-			{{!-- search by stores, publishers, metacritic --}}
+	{{!-- search by stores, publishers, metacritic --}}
+
+	

@@ -4,15 +4,16 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-            contains: ' ',
-            len: [1]
+
+          	len: [1]
+
         }
       },
       genre: {
         type: DataTypes.STRING,
         allowNull: false,
         len: [1]
-      }
+	  },
     });
   
     Favorite.associate = function(models) {

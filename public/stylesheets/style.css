@@ -16,17 +16,17 @@ form.login {
   color           : deeppink;
 }
 #saveFavorites {
-  background-color: green;
-  color           : orange;
+  /* background-color: green;
+  color           : orange; */
   margin    : 0 auto;
   display: flex;
   justify-content: center;
 }
 
-#signup-form,
+/* #signup-form,
 #login-form {
   border: solid 5px #0099cc !important;
-}
+} */
 
 
 #card-choices {
@@ -69,7 +69,7 @@ form.login {
 #recTitle,
 h2 {
 
-  color: #FF77FD;
+  color: white;
 }
 h5 {
   color: silver;
@@ -129,6 +129,9 @@ body {
   float: right;
 
 }
+
+li {
+	color: white;
 
 
 .list-group {
