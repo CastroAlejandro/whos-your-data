@@ -19,8 +19,14 @@ function gamesList(req, res) {
                 pageModel.currentPage = 1
                 pageModel.nextPage = 2
             }
+            for (let index = 0; index < response.data.results.length; index++) {
+                const element = response.data.results[index].genres[0].name;
+                response.data.results[index].genre = element;
+                
+            }
             pageModel.games = response.data.results
             res.render("members", pageModel)
+            console.log(response.data.results)
             
         })
 };

@@ -48,6 +48,7 @@ module.exports = function(app) {
   app.post("/api/favorites", function(req, res) {
       console.log("favorites route hit")
       console.log("data here =>", req.body)
+      
     db.Favorite.create({
         title: req.body.gameTitle,
         genre: req.body.gameGenre,

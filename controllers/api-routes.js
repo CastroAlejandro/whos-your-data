@@ -49,7 +49,6 @@ module.exports = function (app) {
 
 	app.get('/genres', (req, res) => {
 		let genres = [];
-		// let requestUrl = 'https://api.rawg.io/api/genres?key=fe6fb0ea3a144508b49ff65ffdcbbb1b';
 		let requestUrl = 'https://api.rawg.io/api/platforms?key=fe6fb0ea3a144508b49ff65ffdcbbb1b';
 		superagent
 		.get(requestUrl)
