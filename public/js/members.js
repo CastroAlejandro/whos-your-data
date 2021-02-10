@@ -146,7 +146,7 @@ $('.userFave').on('click', (event) => {
 	event.preventDefault();
 	console.log(event.target);
 	
-	let gameTitle = event.target.getAttribute("value");
+	let gameTitle = event.target.getAttribute("data-title");
 	let gameRating = event.target.getAttribute("data-rating");
 	let gameGenre = event.target.getAttribute("data-genre");
 	console.log(userID, gameTitle, gameRating, gameGenre);
