@@ -112,10 +112,12 @@ $(document).ready(function () {
 	var recommendations = $("#recommendations")
 	recommendations.hide()
 
+
 	function startQuiz() {
 		console.log("start quiz");
 		var cardChoices = $("#card-choices")
 		cardChoices.hide()
+
 
 		//Unhide the questions 
 		recommendations.removeAttr("style")

@@ -44,6 +44,7 @@ module.exports = function (app) {
 		});
 	});
 
+
 	// POST route for saving a new post
 	app.post("/api/favorites", function (req, res) {
 		console.log('\n\nInserting Favorite\n\n');
@@ -59,6 +60,7 @@ module.exports = function (app) {
 			res.json(dbFavorite);
 		});
 	});
+
 
 	// DELETE route for deleting posts
 	app.delete("/api/posts/:id", function (req, res) {

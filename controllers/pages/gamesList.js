@@ -1,6 +1,7 @@
 const axios = require("axios");
 
 function gamesList(req, res) {
+
 	console.log('gamesList()');
 
 	const pageModel = {}
@@ -25,6 +26,7 @@ function gamesList(req, res) {
 		console.log(pageModel.games[0].genres);
 		res.render("members", pageModel);
 	});
+
 };
 
 module.exports = gamesList;
