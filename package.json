@@ -27,6 +27,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.1",
+    "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
     "nes.css": "^2.3.0",
     "passport": "^0.4.1",
