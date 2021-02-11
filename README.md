@@ -13,6 +13,8 @@ This is a video game finder app accessing the RAWG database. Starting the app wi
   * [Heroku](#heroku)
   
   * [Questions](#questions)
+
+  * [Screenshots](#screenshots)
   
   ## Installation
   
@@ -44,4 +46,12 @@ Alejandro Castro  | https://github.com/CastroAlejandro
 Ashlyn Hicks  | https://github.com/ashattack
 Mike Carter   | https://github.com/codehawkeye
 Jonathan Smith | https://github.com/jpls218
+
+## Screenshots 
+![SignupPage](public/images/signup.png)
+![UserQueries](public/images/userqs.png)
+![AboutPage](public/images/about.png)
+
+
+
   
